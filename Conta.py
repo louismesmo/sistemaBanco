@@ -1,10 +1,9 @@
 import datetime
 from Extrato import Extrato
-
 class Conta:
-    def __init__(self, numero, clientes, saldo):
+    def __init__(self, numero, saldo):
         self.numero = numero
-        self.clientes = clientes
+        self.clientes = []
         self.saldo = saldo
         self.abertura = datetime.datetime.today()
         self.extrato = Extrato()
